@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Einstein Dark Mode",
+  "version": "1.0",
+  "description": "Customize styles for Dark Mode effect.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Dark Mode",
+    "default_popup": "popup.html"
+  }
+}
